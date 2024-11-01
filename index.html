@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title">DashBoard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Itim&family=Oxanium:wght@200..800&family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="LsideBar">
+      <a href="./index.html" style="text-decoration: none; color: black">
+        <section class="title">
+          <img src="./images/logo.png" alt="logo" height="30px" width="30px" />
+          <h1>EduProviders</h1>
+        </section>
+      </a>
+      <section class="userProfile">
+        <center>
+          <img src="./images/user.png" alt="User" height="60%" width="60%" />
+        </center>
+        <p class="userName">USER</p>
+        <p class="userMail">user@mail.com</p>
+      </section>
+      <section class="options">
+        <ul>
+          <a href="./index.html"
+            ><li class="active" onclick="changeColor(this,'DashBoard') ">
+              <img
+                src="./images/Dashboard.png"
+                alt="DashBoard"
+                height="25px"
+                width="25px"
+              />DashBoard
+            </li></a
+          >
+          <a href="#"
+            ><li onclick="changeColor(this,'Resources')">
+              <img
+                src="./images/Resourses.png"
+                alt="Resources"
+                height="25px"
+                width="25px"
+              />Resources
+            </li></a
+          >
+          <a href="#"
+            ><li onclick="changeColor(this,'Problems')">
+              <img
+                src="./images/Quiz.png"
+                alt="Quiz"
+                height="25px"
+                width="25px"
+              />Problems
+            </li></a
+          >
+          <a href="#"
+            ><li onclick="changeColor(this,'Visualization')">
+              <img
+                src="./images/Visualization.png"
+                alt="Visualization"
+                height="25px"
+                width="25px"
+              />Visualization
+            </li></a
+          >
+          <a href="#"
+            ><li onclick="changeColor(this,'Courses')">
+              <img
+                src="./images/Courses.png"
+                alt="Courses"
+                height="25px"
+                width="25px"
+              />Courses
+            </li></a
+          >
+          <a href="#"
+            ><li onclick="changeColor(this,'Settings')">
+              <img
+                src="./images/Setting.png"
+                alt="Setting"
+                height="25px"
+                width="25px"
+              />Settings
+            </li></a
+          >
+        </ul>
+      </section>
+    </section>
+    <section class="content active" id="dashboardContent">
+      <section class="top">
+        <section class="userDisplay">
+          <section>
+            <h2>Hello,USER</h2>
+            <p>Day - Date/Month/Year</p>
+          </section>
+          <section class="day-night"></section>
+        </section>
+        <section class="searchBar">
+          <img
+            src="./images/search.png"
+            alt="search"
+            height="30px"
+            width="30px"
+          />
+        </section>
+      </section>
+
+      <section class="topics">
+        <a href="./linear_search.html"
+          ><section class="Algorithm">
+            <h2>Algorithms</h2>
+            <section class="progress-text">
+              <div class="totalTopics1">Topics</div>
+              <div id="progressText1">0%</div>
+            </section>
+            <div class="progress-container">
+              <div class="progress-bar" id="progressBar1"></div>
+            </div></section
+        ></a>
+        <section class="DataStructure">
+          <h2>Data Structure</h2>
+          <section class="progress-text">
+            <div class="totalTopics2">Topics</div>
+            <div id="progressText2">0%</div>
+          </section>
+          <div class="progress-container">
+            <div class="progress-bar" id="progressBar2"></div>
+          </div>
+        </section>
+      </section>
+
+      <section class="stats">
+        <section class="todayTask">
+          <h2>Tasks:</h2>
+          <section class="questions">
+            <section class="q1">
+              <div>
+                <h3>Problem:</h3>
+                <p>Discription of the problem</p>
+              </div>
+              <div>
+                <img src="./images/taskPercent.png" alt="%" height="30px" width="30px">
+              </div>
+            </section>
+            <section class="q2">
+              <div>
+                <h3>Problem:</h3>
+                <p>Discription of the problem</p>
+              </div>
+              <div>
+                <img src="./images/taskPercent.png" alt="%" height="30px" width="30px">
+              </div>
+            </section>
+            <section class="q3">
+              <div>
+                <h3>Problem:</h3>
+                <p>Discription of the problem</p>
+              </div>
+              <div>
+                <img src="./images/taskPercent.png" alt="%" height="30px" width="30px">
+              </div>
+            </section>
+          </section>
+        </section>
+        <section class="statistics">
+          <h2>Your statistics:</h2>
+          <section class="widgets">
+            <section>
+              <h4>-%-</h4>
+              <p>Tasks Completed</p>
+            </section>
+            <section>
+              <h4>ChatBot</h4>
+              <p>Need Help?</p>
+            </section>
+            <section>
+              <h4>Any Issues?</h4>
+              <p>+</p>
+            </section>
+            <section>
+              <h4>Notes</h4>
+              <p>Saved Notes</p>
+            </section>
+          </section>
+        </section>
+      </section>
+      <br>
+      <section class="RsideBar">
+        <h1>StreakDays:</h1>
+        <div id="calendar"></div>
+      </section>
+    </section>
+    <section class="content" id="resourcesContent">
+      <h1>Resources</h1>
+    </section>
+    <section class="content" id="problemsContent">
+      <h1>problemsContent</h1>
+    </section>
+    <section class="content" id="visualizationContent">
+      <h1>visualizationContent</h1>
+    </section>
+    <section class="content" id="coursesContent">
+      <h1>coursesContent</h1>
+    </section>
+
+    <script src="./calendar.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
