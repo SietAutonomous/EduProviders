@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title">DashBoard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Itim&family=Oxanium:wght@200..800&family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style1.css" />
+  </head>
+  <body>
+    <section class="LsideBar">
+      <a href="./index.html" style="text-decoration: none; color: black">
+        <section class="title">
+          <img src="./images/logo.png" alt="logo" height="30px" width="30px" />
+          <h1>EduProviders</h1>
+        </section>
+      </a>
+      <section class="userProfile">
+        <center>
+          <img src="./images/user.png" alt="User" height="60%" width="60%" />
+        </center>
+        <p class="userName">USER</p>
+        <p class="userMail">user@mail.com</p>
+      </section>
+      <section class="options">
+        <ul>
+          <a href="./index.html"
+            ><li class="active" onclick="changeColor(this,'DashBoard') ">
+              <img
+                src="./images/Dashboard.png"
+                alt="DashBoard"
+                height="25px"
+                width="25px"
+              />DashBoard
+            </li></a
+          >
+          <a href="#"
+            ><li onclick="changeColor(this,'Resources')">
+              <img
+                src="./images/Resourses.png"
+                alt="Resources"
+                height="25px"
+                width="25px"
+              />Resources
+            </li></a
+          >
+          <a href="#"
+            ><li onclick="changeColor(this,'Problems')">
+              <img
+                src="./images/Quiz.png"
+                alt="Quiz"
+                height="25px"
+                width="25px"
+              />Problems
+            </li></a
+          >
+          <a href="#"
+            ><li onclick="changeColor(this,'Visualization')">
+              <img
+                src="./images/Visualization.png"
+                alt="Visualization"
+                height="25px"
+                width="25px"
+              />Visualization
+            </li></a
+          >
+          <a href="#"
+            ><li onclick="changeColor(this,'Courses')">
+              <img
+                src="./images/Courses.png"
+                alt="Courses"
+                height="25px"
+                width="25px"
+              />Courses
+            </li></a
+          >
+          <a href="#"
+            ><li onclick="changeColor(this,'Settings')">
+              <img
+                src="./images/Setting.png"
+                alt="Setting"
+                height="25px"
+                width="25px"
+              />Settings
+            </li></a
+          >
+        </ul>
+      </section>
+    </section>
+
+    <section class="container">
+      <section class="section1">
+        <div class="text-content">
+          <h1>Data Structures</h1>
+          <p>
+            Data structures are ways to organize and store data efficiently in a
+            computer.
+          </p>
+          <p>
+            They help manage data so that it can be used effectively for
+            different operations, like searching, sorting, or modifying.
+          </p>
+          <a href="./linear_search.html">
+            <button class="button">Start Learning</button></a
+          >
+        </div>
+        <div class="image-content">
+          <img src="./images/dataStructureImg.jpg" alt="Algorithm" />
+        </div>
+      </section>
+      <section class="section2">
+        <div class="card">
+          <h3>Why Are Data Structures Important?</h3>
+          <ol>
+            <li>
+              Efficient Data Handling: Proper data structures make programs
+              faster and more efficient.
+            </li>
+            <li>
+              Foundation of Algorithms: Algorithms often rely on data structures
+              to perform tasks, like finding the shortest path or sorting large
+              amounts of data.
+            </li>
+            <li>
+              Everyday Applications: From databases to operating systems and
+              even simple apps, data structures are everywhere.
+            </li>
+          </ol>
+        </div>
+        <div class="card">
+          <h3>Popular Data Structures and Their Uses</h3>
+          <ol>
+            <li>
+              Arrays: Used for storing collections of elements in a fixed order,
+              like an image's pixel data
+            </li>
+            <li>
+              Linked Lists: Great for managing a sequence of items with easy
+              insertion and deletion.
+            </li>
+            <li>
+              Stacks & Queues: Useful for tasks like undo features (stacks) or
+              managing tasks in order (queues).
+            </li>
+            <li>
+              Trees: Essential for hierarchical data, such as file systems or
+              family trees.
+            </li>
+          </ol>
+        </div>
+      </section>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
