@@ -261,13 +261,14 @@ body {
   flex-direction: column;
   text-align: center;
   padding: 30px;
+  padding-bottom: 0;
   p {
     margin: 0px;
     padding: 0px;
     font-family: "Itim";
   }
   img {
-    box-shadow: inset 0px 0px 5px gray;
+    box-shadow: inset 0px 0px 0px gray;
     border-radius: 50%;
     margin: 10px;
   }
@@ -319,7 +320,7 @@ body {
       animation: slideInFromLeft 1s ease forwards;
       font-size: 15px;
       list-style: none;
-      margin: 2px 0px 2px 30px;
+      margin: 0px 0px 2px 30px;
       padding: 8px;
       padding-left: 20px;
       border-radius: 15px 0px 0px 15px;
@@ -406,4 +407,105 @@ body {
     background-color: #ffffff;
     color: #333;
   }
+}
+
+
+
+
+
+
+
+
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.legend-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.legend-item {
+  padding: 10px 20px;
+  margin: 0 5px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.array-container {
+  margin-top: 20%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.array-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: rgb(164, 164, 164);
+  color: white;
+  font-size: 22px;
+  position: relative;
+  transition: transform 0.5s, background-color 0.5s;
+}
+
+.array-element p {
+  margin: 0;
+}
+
+.index-label {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  top: -20px;
+}
+
+.controls-container {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  padding: 20px;
+}
+
+.controlHandler {
+  display: flex;
+  gap: 0px;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 5px 2px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0C6170;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #084d5b;
 }
